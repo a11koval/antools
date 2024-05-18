@@ -53,6 +53,9 @@ body {
   opacity: 55%;
   font-weight: 500;
 }
+.header-nav-list-item:nth-child(2)::after{
+  content: url(img/header-after.png);
+}
 .header-button-wrapper {
   display: flex;
   align-items: flex-end;
@@ -434,29 +437,36 @@ border-radius: 15px;
   height: 492px;
 }
 .Manager-img {
-  background-image: url(img/david-suarez-4a1nNlrS5ZI-unsplash.png),
-    url(img/circle.png);
+  background-image: url(img/david-suarez-4a1nNlrS5ZI-unsplash.png),url(img/text-bg.svg),
+    url(img/circle.png), url(img/“.svg);
   background-repeat: no-repeat;
-  width: 380px;
+  width: 400px;
   height: 500px;
-  background-position: center, center, bottom;
+  background-position: center, bottom right, bottom,top right;
 }
 .bg-manager {
   width: 380px;
   height: 380px;
-  position: absolute;
+  
   background-repeat: no-repeat;
   background-position: top;
 }
 .person-info {
-  background-image: url(img/text-bg.svg);
+ text-align: right top;
   background-size: contain;
   padding: 15px 23px;
   width: 265px;
   height: 65px;
-  position: absolute;
   background-repeat: no-repeat;
   background-position: top;
+  
+}
+.Manager-right{
+  color: var(--title-color);
+  opacity: 78%;
+  letter-spacing: 1.5%;
+  font-size: 14px;
+  font-weight: 400;
 }
 .Become-a-contributor {
   display: flex;
@@ -524,6 +534,22 @@ border-radius: 15px;
 }
 .footer-logo-link {
   text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--title-color);
+  opacity: 90%;
+}
+.footer-content-text-top{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--title-color);
+  opacity: 90%;
+}
+.footer-content-text{
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--title-color);
+  opacity: 55%;
 }
 .footer-nav {
   display: flex;
@@ -539,11 +565,17 @@ border-radius: 15px;
   display: flex;
   flex-direction: column;
 }
+.footer-nav-text{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--title-color);
+  opacity: 90%;
+}
 .footer-nav-list {
   list-style: none;
 }
 .footer-nav-text {
-  padding: 10px 0;
+  padding: 10px 40px;
 }
 .footer-nav-list {
   display: flex;
@@ -558,4 +590,9 @@ border-radius: 15px;
   text-decoration: none;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--title-color);
+  opacity: 55%;
 }
