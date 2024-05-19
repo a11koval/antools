@@ -437,29 +437,36 @@ border-radius: 15px;
   height: 492px;
 }
 .Manager-img {
-  background-image: url(img/david-suarez-4a1nNlrS5ZI-unsplash.png),url(img/text-bg.svg),
+  background-image: url(img/text-bg.svg), url(img/david-suarez-4a1nNlrS5ZI-unsplash.png),
     url(img/circle.png), url(img/“.svg);
   background-repeat: no-repeat;
   width: 400px;
   height: 500px;
-  background-position: center, bottom right, bottom,top right;
+  background-position: bottom right, center,  bottom,top right;
 }
-.bg-manager {
-  width: 380px;
-  height: 380px;
-  
-  background-repeat: no-repeat;
-  background-position: top;
-}
+
 .person-info {
- text-align: right top;
-  background-size: contain;
-  padding: 15px 23px;
-  width: 265px;
-  height: 65px;
-  background-repeat: no-repeat;
-  background-position: top;
+ 
+  text-align: center;
+  padding: 390px  0;
   
+  
+}
+.Manager-work{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--title-color);
+  opacity: 55%;
+  text-align: center;
+  padding-left: 40px;
+}
+.Manager-name{
+  letter-spacing: 1.5%;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--title-color);
+  opacity: 78%;
+  padding-left: 100px;
 }
 .Manager-right{
   color: var(--title-color);
