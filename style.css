@@ -461,8 +461,9 @@ border-radius: 15px;
 .person-info {
  
   text-align: center;
-  padding: 390px  0;
-  
+  position: relative;
+  bottom: -416px;
+  right: 0;
   
 }
 .Manager-work{
@@ -493,8 +494,9 @@ border-radius: 15px;
 }
 .bottom::after{
 content: url(img/slide-bottom.svg);
-text-align: center;
-padding: 10px;
+position: relative;
+top: 70px;
+
 }
 .Become-a-contributor {
   display: flex;
