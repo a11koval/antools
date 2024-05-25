@@ -16,7 +16,7 @@ body {
 }
 .container {
   padding: 0 15px;
-  margin: 0;
+  margin: 0 auto;
   max-width: 1250px;
 }
 .header-content {
@@ -68,15 +68,17 @@ body {
   border: 0;
   font-weight: 600;
   line-height: 24px;
+  padding: 12px 40px 12px 0;
+  border-radius: 8px;
 }
-.header-btn:hover {
-  border-radius: 10px;
+.header-btn-second{
+  border-radius: 8px;
   background-color: var(--btn-background-color);
-  padding: 5px 30px;
-  color: var(--title-color);
-  letter-spacing: 0%;
-  font-size: 16px;
   font-weight: 600;
+  font-size: 16px;
+border: 1px solid var(--btn-background-color);
+padding: 10px 30px;
+color: var(--title-color);
 }
 .info {
   display: flex;
@@ -125,6 +127,7 @@ body {
   border: 0;
   color: var(--form-text-background-color);
   margin: 0 15px;
+  outline: none;
 }
 .info-form-btn {
   border-radius: 8px;
@@ -180,6 +183,7 @@ body {
   flex-wrap: wrap;
   max-width: 1250px;
   gap: 25px;
+  padding: 20px;
 }
 .most-popular-tools-product {
   padding: 30px;
@@ -188,7 +192,7 @@ body {
   background-image: url(img/Ellipse-most-popular.svg);
   background-repeat: no-repeat;
   background-position: right top;
-  border: 2px solid;
+  
   border-image-source: linear-gradient(
     118.49deg,
     rgba(255, 255, 255, 0.08) -2.11%,
@@ -347,7 +351,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 48px) / 2);
+  flex-basis: calc((100% - 104px) / 2);
+  padding: 20px;
 }
 .newcomer-tools-product-header {
   display: flex;
@@ -412,8 +417,7 @@ body {
     background-image: url(img/Ellipse-most-popular.svg);
     background-repeat: no-repeat;
     background-position: right top;
-    border: 2px solid;
-    border: 2px solid;
+   
    border-image-source: linear-gradient(118.49deg, rgba(255, 255, 255, 0.08) -2.11%, rgba(255, 255, 255, 0) 28.55%, rgba(255, 255, 255, 0.05) 44.69%, rgba(255, 255, 255, 0) 96.78%);
 background-color: var(--form-background-color);
 border-radius: 15px;
@@ -425,7 +429,9 @@ border-radius: 15px;
   display: flex;
   justify-content: center;
   margin-top: 180px;
+  
 }
+
 .Manager-wrap {
   display: flex;
   justify-content: space-between;
@@ -443,6 +449,13 @@ border-radius: 15px;
   width: 400px;
   height: 500px;
   background-position: bottom right, center,  bottom,top right;
+}
+.Manager-wrap::before{
+  content: url(img/slide-left.svg);
+  
+}
+.Manager-wrap::after{
+  content: url(img/chevron-left.svg);
 }
 
 .person-info {
@@ -475,12 +488,21 @@ border-radius: 15px;
   font-size: 14px;
   font-weight: 400;
 }
+.bottom{
+  text-align: center;
+}
+.bottom::after{
+content: url(img/slide-bottom.svg);
+text-align: center;
+padding: 10px;
+}
 .Become-a-contributor {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 180px;
+  padding-bottom: 200px;
 }
 .Become-a-contributor-title {
   font-weight: 500;
@@ -508,6 +530,7 @@ border-radius: 15px;
   padding: 6px 10px;
   border: 1px solid var(--form-background-color);
   background-color: var(--form-background-color);
+  
 }
 .search-input {
   width: 100%;
@@ -516,6 +539,8 @@ border-radius: 15px;
   border: 0;
   color: var(--form-text-background-color);
   padding: 0 10px;
+  
+  outline: none;
 }
 .Become-a-contributor-btn {
   color: var(--title-color);
